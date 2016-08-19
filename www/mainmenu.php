@@ -12,7 +12,7 @@
 
 <div data-role="page" data-theme="e" id="pageMainmenu">
 	<div data-role="header" data-theme="a">
-		<h1><strong>THAI EMPLOYEE CARE</strong></h1>
+		<h1><strong>THAI TIME EMPLOYEE</strong></h1>
 	</div>
 	<div data-role="content" >
     <div align="center">
