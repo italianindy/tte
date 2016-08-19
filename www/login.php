@@ -26,7 +26,7 @@ $objResult = mysql_fetch_array($objQuery);
 
 <div data-role="page" data-theme="e" id="pageLogin">
 	<div data-role="header" data-theme="a">
-   <a href="http://112.121.150.67/thaiemployeecare/logout.php" data-icon="home" data-iconpos="notext" data-direction="reverse" >Back</a>
+   <a href="http://112.121.150.67/thaitimeemployee/logout.php" data-icon="home" data-iconpos="notext" data-direction="reverse" >Back</a>
 <h1><font size="5">เข้าสู่ระบบ</font></h1>
 		
 	</div>
@@ -42,7 +42,7 @@ if(!$objResult)
 <div align="center">
 
       <img src="pic/notuser.png" width="240" height="120"> 			</div>
-<font size="4" ><a href="http://112.121.150.67/thaiemployeecare/mainmenu.php" data-icon="back" data-role="button" data-theme="a">ลองอีกครั้ง</a></font>
+<font size="4" ><a href="http://112.121.150.67/thaitimeemployee/mainmenu.php" data-icon="back" data-role="button" data-theme="a">ลองอีกครั้ง</a></font>
 <?
 }
 else
@@ -60,7 +60,7 @@ $_SESSION["strUserID"] = $objResult["emp_id"];
         <div data-role="fieldcontain" align="center">
 			<font size="4" color="#990000"><label for="name">รหัสพนักงาน</font> <font size="3" color="#990000">: <? echo $objResult["emp_id"];?></font>
 		</div>
-		<font size="4" color="#990000"><a href="http://112.121.150.67/thaiemployeecare/mainemployee.php" data-icon="grid" data-role="button" data-theme="a">เข้าสู่เมนูหลัก</a></font>
+		<font size="4" color="#990000"><a href="http://112.121.150.67/thaitimeemployee/mainemployee.php" data-icon="grid" data-role="button" data-theme="a">เข้าสู่เมนูหลัก</a></font>
     </div>    
 
 <?

@@ -2,7 +2,7 @@
 session_start();
 if($_SESSION["strUserID"] == "")
 {
-header("location:http://112.121.150.67/thaiemployeecare/mainmenu.php");
+header("location:http://112.121.150.67/thaitimeemployee/mainmenu.php");
 exit();
 }
 ?>
@@ -42,7 +42,7 @@ while($objResult3 = mysql_fetch_array($objQuery3)) {
 
 <div data-role="page" data-theme="e" id="pageMparent">
 	<div data-role="header" data-theme="a">
-    <a href="http://112.121.150.67/thaiemployeecare/logout.php" data-icon="home" data-iconpos="notext" data-direction="reverse" >Back</a>
+    <a href="http://112.121.150.67/thaitimeemployee/logout.php" data-icon="home" data-iconpos="notext" data-direction="reverse" >Back</a>
 		<h1><font size="2" >ชื่อผู้ใช้ : คุณ<? echo $objResult["emp_fname"];?> <? echo $objResult["emp_lname"];?></font></h1>
 	</div>
 <?
@@ -93,7 +93,7 @@ while($objResult2 = mysql_fetch_array($objQuery2)) {
   <li><a href="#">
     <h3><font size="4" >สาขา<? echo $objResult2["branch_name"]?> </font><font size="3" >พนักงานทั้งหมด </font><font size="2" ><? echo $total;?></font> <font size="3" >คน</font></h3>
     <p> <font size="3" >เข้างานแล้ว </font><font size="2" ><? echo $objResult2["ComeCount"]?> <font size="3" >คน</font>  </font> <font size="3" >เข้าสาย </font><font size="2" ><? echo $objResult2["LateCount"]?> <font size="3" >คน</font>  </font> <font size="3" >ยังไม่มา </font><font size="2" ><? echo $leave;?> <font size="3" >คน</font></font></p>
-  </a><a href="http://112.121.150.67/thaiemployeecare/detailemployee.php?bid=<?=$objResult2["branch_id"];?>">รายละเอียด</a></li>
+  </a><a href="http://112.121.150.67/thaitimeemployee/detailemployee.php?bid=<?=$objResult2["branch_id"];?>">รายละเอียด</a></li>
 <?
 }
 ?> 
@@ -102,7 +102,7 @@ while($objResult2 = mysql_fetch_array($objQuery2)) {
     <div data-role="footer" data-theme="a" data-position="fixed">
 		<div data-role="navbar">
           <ul>
-            <li><a href="http://112.121.150.67/thaiemployeecare/logout.php"><font size="4">ออกจากระบบ</font></a></li>
+            <li><a href="http://112.121.150.67/thaitimeemployee/logout.php"><font size="4">ออกจากระบบ</font></a></li>
            
           </ul>
         </div>

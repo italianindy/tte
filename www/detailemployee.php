@@ -2,7 +2,7 @@
 session_start();
 if($_SESSION["strUserID"] == "")
 {
-header("location:http://112.121.150.67/thaiemployeecare/mainmenu.php");
+header("location:http://112.121.150.67/thaitimeemployee/mainmenu.php");
 exit();
 }
 ?>
@@ -34,7 +34,7 @@ $objResult = mysql_fetch_array($objQuery);
 
 <div data-role="page" data-theme="e" id="pageMparent">
 	<div data-role="header" data-theme="a">
-    <a href="http://112.121.150.67/thaiemployeecare/mainemployee.php" data-icon="back" data-iconpos="notext" data-direction="reverse" >Back</a>
+    <a href="http://112.121.150.67/thaitimeemployee/mainemployee.php" data-icon="back" data-iconpos="notext" data-direction="reverse" >Back</a>
 		<h1><font size="3" >สาขา : <? echo $objResult["branch_name"];?> </font></h1>
 	</div>
 <?
@@ -140,7 +140,7 @@ while($objResult3 = mysql_fetch_array($objQuery3)) {
     <div data-role="footer" data-theme="a" data-position="fixed">
 		<div data-role="navbar">
           <ul>
-            <li><a href="http://112.121.150.67/thaiemployeecare/logout.php"><font size="4">ออกจากระบบ</font></a></li>
+            <li><a href="http://112.121.150.67/thaitimeemployee/logout.php"><font size="4">ออกจากระบบ</font></a></li>
            
           </ul>
         </div>
