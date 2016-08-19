@@ -1,5 +1,5 @@
 <?
 session_start();
 session_destroy();
-header("location:http://112.121.150.67/thaitimeemployee/mainmenu.php");
+header("location:http://119.59.125.117/thaitimeemployee/mainmenu.php");
 ?>
