@@ -10,7 +10,7 @@ exit();
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>THAI TIME EMPLOYEE</title>
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
@@ -118,7 +118,7 @@ date_format(employeecome.emc_in,'%Y-%m-%d') = date_format(now(),'%Y-%m-%d')
  */
 $strSQL3 =  "select employee.*
 from employee
-where employee.emp_id not in (select emp_id from employeecome where date_format(employeecome.emc_in,'%Y-%m-%d') = date_format(now(),'%Y-%m-%d'))
+where employee.emp_id not in (select emp_id from employeecome where date_format(employeecome.emc_in,'%Y-%m-%d') != date_format(now(),'%Y-%m-%d'))
 and employee.emp_status = 'ปกติ'
 and employee.branch_id = '".$_GET["bid"]."'";
 $objQuery3 = mysql_query($strSQL2) or die (mysql_error());
